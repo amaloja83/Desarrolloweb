@@ -4,16 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diseñadora Freelancer</title>
+    <!--Añadimos preload para cargar la hoja de estilos y mejorar la carga-->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <!--Enlazar hoja de estilos-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <h1>Alexandra M. López Freelancer</h1>
     </header>
 
+    <!--Usamos nav para los enlaces del menu-->
+    <nav>
+      <!--Enlace a la pagina de nosotros <a href="nosotros.html">Inicio</a>-->
+      <a href="#">Inicio</a>
+      <a href="#">Sobre mi</a>
+      <a href="#">Clientes</a>
+      <a href="#">Contacto</a>
+    </nav>
+
     <!--Un header debe tener un section que lo rodee-->
     <section>
       <h2>Diseño y Desarrollo Web Freelancer</h2>
+      <p>
+        <!--svg del icono map en tabler icons-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="40"
+          height="40"
+          stroke-width="2"
+        >
+          <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+          <path
+            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+          ></path>
+        </svg>
+      </p>
+
       <p>A Coruña, España</p>
+      <a href="#">Contactar</a>
     </section>
 
     <!--Añadimos un main para el contendido principal-->
@@ -23,6 +57,24 @@
 
       <section>
         <h3>Diseño Web</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="40"
+          height="40"
+          stroke-width="2"
+        >
+          <path
+            d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+          ></path>
+          <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+          <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+          <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        </svg>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
           quos minima exercitationem amet dolores similique officiis fuga
@@ -32,6 +84,26 @@
 
       <section>
         <h3>Mantenimiento de ordenadores</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="40"
+          height="40"
+          stroke-width="2"
+        >
+          <path d="M10 15h-6a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h6"></path>
+          <path
+            d="M13 4m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"
+          ></path>
+          <path d="M7 19l3 0"></path>
+          <path d="M17 8l0 .01"></path>
+          <path d="M17 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+          <path d="M9 15l0 4"></path>
+        </svg>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
           quos minima exercitationem amet dolores similique officiis fuga
@@ -41,6 +113,28 @@
 
       <section>
         <h3>Clases de informática</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="40"
+          height="40"
+          stroke-width="2"
+        >
+          <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+          <path
+            d="M10 21h-3a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5"
+          ></path>
+          <path d="M9 9h1"></path>
+          <path d="M9 13h2.5"></path>
+          <path d="M9 17h1"></path>
+          <path d="M14 21v-4a2 2 0 1 1 4 0v4"></path>
+          <path d="M14 19h4"></path>
+          <path d="M21 15v6"></path>
+        </svg>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
           quos minima exercitationem amet dolores similique officiis fuga
@@ -51,6 +145,37 @@
 
     <section>
       <h2>Contacto</h2>
+      <!--Añadimos el formulario de contacto-->
+      <form action="#">
+        <fieldset>
+          <legend>Contáctanos Aquí</legend>
+
+          <!--Añadimos div para agrupar los campos-->
+          <div>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Tú Nombre" />
+          </div>
+
+          <div>
+            <label>Teléfono:</label>
+            <input type="tel" placeholder="Tú Teléfono" />
+          </div>
+
+          <div>
+            <label>Correo:</label>
+            <input type="email" placeholder="Tú Email" />
+          </div>
+
+          <div>
+            <label>Mensaje</label>
+            <textarea></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </fieldset>
+      </form>
     </section>
 
     <footer>
