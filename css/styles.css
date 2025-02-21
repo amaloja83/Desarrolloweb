@@ -1,0 +1,26 @@
+/*En root almacenamos variables - custom properties*/
+/*Vamos a definir la paleta de colores*/
+:root{
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario: #2CC186;
+    --secundario: #01261C;
+    --terciario: #025949; 
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;/*1 rem = 10px */
+    font-family: "Montserrat", serif;
+}
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;/*38px*/
+    
+}
+
+.titulo span{
+    font-size: 2rem;
+}

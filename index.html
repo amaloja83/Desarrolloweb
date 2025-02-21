@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diseñadora Freelancer</title>
+    <!--Añadimos normalize -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--Preload fuente - Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!--Añadimos preload para cargar la hoja de estilos y mejorar la carga-->
     <link rel="preload" href="css/styles.css" as="style" />
     <!--Enlazar hoja de estilos-->
@@ -11,7 +21,9 @@
   </head>
   <body>
     <header>
-      <h1>Alexandra M. López Freelancer</h1>
+      <h1 class="titulo">
+        Alexandra M. López <span>Ingeniera informática</span>
+      </h1>
     </header>
 
     <!--Usamos nav para los enlaces del menu-->
@@ -25,7 +37,7 @@
 
     <!--Un header debe tener un section que lo rodee-->
     <section>
-      <h2>Diseño y Desarrollo Web Freelancer</h2>
+      <h2 class="titulo">Diseño y Desarrollo Web Freelancer</h2>
       <p>
         <!--svg del icono map en tabler icons-->
         <svg
