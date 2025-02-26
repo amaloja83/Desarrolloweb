@@ -6,6 +6,7 @@
     --primario: #2CC186;
     --secundario: #01261C;
     --terciario: #025949; 
+    --grisclaro: #DFE9F3; 
 }
 /*Globales*/
 html{
@@ -20,6 +21,8 @@ para que no afecte el padding*/
 body{
     font-size: 16px;/*1 rem = 10px */
     font-family: "Montserrat", serif;
+    /*Creamos el degradado del fondo*/
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
 }
 
 /*Añadimos este contenedor para organizar el menu de navegacion principal*/
@@ -54,6 +57,15 @@ CTRL+shit+p -> snippets ->css.json -> mq*/
     .boton{
         width: auto;
     }
+}
+
+.sombra{
+    /*Añadimos sombra a la caja
+    https://www.cssmatic.com/box-shadow*/
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
 }
 /*Tipografia*/
 h1{
@@ -107,6 +119,7 @@ h1, h2, h3{
     height: 410px;
     /*Posicionamos el contenido*/
     position: relative;
+    margin-bottom: 2rem;
 }
 .contenido-inicio{
     /*Posicionamos el contenido*/
@@ -130,4 +143,40 @@ h1, h2, h3{
 .contenido-inicio .ubicacion{
     display: flex;
     align-items: flex-end;
+}
+/*Servicios*/
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;/*Espaciar columnas*/
+        grid-template-columns: repeat(3, 1fr);/*1fr 1fr 1fr -> Crea tres columnas de una fraccion o 33.33%*/
+        column-gap: 1rem;/*Agregar margen entre columnas*/
+    }    
+}
+
+.servicio{
+    /*Alineamos circulos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;   
+}
+
+.servicio p{
+    line-height: 2;/*Interlineado del parrafo*/
+}
+
+.servicio .iconos{
+    height: 15rem;/*150px*/
+    width: 15rem;
+    /*creamos circulos para los iconos*/
+    background-color: var(--primario);
+    border-radius: 50%; 
+    /**centramos circulos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
