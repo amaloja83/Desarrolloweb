@@ -27,39 +27,43 @@
     </header>
 
     <!--Usamos nav para los enlaces del menu-->
-    <nav>
-      <!--Enlace a la pagina de nosotros <a href="nosotros.html">Inicio</a>-->
-      <a href="#">Inicio</a>
-      <a href="#">Sobre mi</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <!--Enlace a la pagina de nosotros <a href="nosotros.html">Inicio</a>-->
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
 
     <!--Un header debe tener un section que lo rodee-->
-    <section>
-      <h2 class="titulo">Diseño y Desarrollo Web Freelancer</h2>
-      <p>
-        <!--svg del icono map en tabler icons-->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          width="40"
-          height="40"
-          stroke-width="2"
-        >
-          <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-          <path
-            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-          ></path>
-        </svg>
-      </p>
+    <section class="inicio">
+      <div class="contenido-inicio">
+        <h2>Diseño y Desarrollo Web Freelancer</h2>
+        <div class="ubicacion">
+          <!--svg del icono map en tabler icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            width="40"
+            height="40"
+            stroke-width="2"
+          >
+            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+            <path
+              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+            ></path>
+          </svg>
+          <p>A Coruña, España</p>
+        </div>
 
-      <p>A Coruña, España</p>
-      <a href="#">Contactar</a>
+        <a class="boton" href="#">Contactar</a>
+      </div>
     </section>
 
     <!--Añadimos un main para el contendido principal-->
