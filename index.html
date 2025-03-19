@@ -167,44 +167,50 @@
         </section>
       </div>
       <!--.servicios-->
+
+      <section>
+        <h2>Contacto</h2>
+        <!--Añadimos el formulario de contacto-->
+        <form class="formulario">
+          <fieldset>
+            <legend>Contáctanos diligenciando el formulario</legend>
+
+            <div class="contenedor-campos">
+              <!--Añadimos div para agrupar los campos-->
+              <div class="campo">
+                <label>Nombre:</label>
+                <input class="input-text" type="text" placeholder="Tú Nombre" />
+              </div>
+
+              <div class="campo">
+                <label>Teléfono:</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Tú Teléfono"
+                />
+              </div>
+
+              <div class="campo">
+                <label>Correo:</label>
+                <input class="input-text" type="email" placeholder="Tú Email" />
+              </div>
+
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
+            </div>
+            <!--.contenedor campos-->
+
+            <div class="alinear-derecha flex">
+              <input class="boton w-sm-100" type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
-
-    <section>
-      <h2>Contacto</h2>
-      <!--Añadimos el formulario de contacto-->
-      <form action="#">
-        <fieldset>
-          <legend>Contáctanos Aquí</legend>
-
-          <!--Añadimos div para agrupar los campos-->
-          <div>
-            <label>Nombre:</label>
-            <input type="text" placeholder="Tú Nombre" />
-          </div>
-
-          <div>
-            <label>Teléfono:</label>
-            <input type="tel" placeholder="Tú Teléfono" />
-          </div>
-
-          <div>
-            <label>Correo:</label>
-            <input type="email" placeholder="Tú Email" />
-          </div>
-
-          <div>
-            <label>Mensaje</label>
-            <textarea></textarea>
-          </div>
-
-          <div>
-            <input type="submit" value="Enviar" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados. Alexandra M. López</p>
     </footer>
   </body>
